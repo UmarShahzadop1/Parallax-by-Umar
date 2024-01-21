@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans&display=block" rel="stylesheet">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+</head>
+<body>
+    <div id="smooth-wrapper">
+        <div class="stage" id="smooth-content">
+            <header class="header">
+                <div class="logo">Assassin's Creed</div>
+                <a href="#" class="nav-btn">
+                    <svg class="nav-btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 30">
+                        <rect class="nav-rect" width="40" height="2" x="8" y="8" fill="#242423" />
+                        <rect class="nav-rect" width="40" height="2" x="8" y="14" fill="#242423" />
+                        <rect width="40" height="2" x="8" y="20" fill="#242423" />
+                    </svg>
+                </a>
+            </header>
+    
+            <section class="intro slide--0" id="slide-0">
+                <div class="intro__content">
+                    <h1 class="intro__title">Creed</h1>
+                    <p class="intro__txt">Assassin's Creed, an iconic video game series, immerses players in thrilling historical adventures. From Renaissance Italy to ancient Greece, it intertwines compelling narratives with stealthy gameplay. The franchise's success lies in its ability to transport gamers to diverse eras, providing an unparalleled gaming experience filled with intrigue, action, and historical richness.</p>
+                </div>
+                <img class="intro__img intro__img--1" src="images/assassins-creed-22713.png" />
+                <img class="intro__img intro__img--2" src="images/pngegg.png" />
+            </section>
+    
+            <section class="slide slide--1" id="slide-1">
+                <div class="col col--1">
+                    <div class="col__content col__content--1">
+                        <h2 class="col__content-title"><span class="line__inner">Mono</span><br /><span class="line__inner">No. 1</span></h2>
+                        <div class="col__content-wrap">
+                            <p class="col__content-txt">Assassin's Creed, a pinnacle of gaming excellence, enchants players with its spellbinding blend of historical richness and dynamic gameplay, delivering a captivating journey that transcends time and ignites the imagination</p>
+                            <a href="#" class="slide-link">
+                                <div class="slide-link__circ"></div>
+                                <div class="slide-link__line"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#slide-2" class="slide__scroll-link">
+                        <div class="slide__scroll-line"></div>
+                    </a>
+                </div>
+                <div class="col col--2">
+                    <div class="col__image-wrap">
+                        <img class="img img--1" src="images/p3.jpg" />
+                    </div>
+                </div>
+            </section>
+    
+            <section class="slide slide--2" id="slide-2">
+                <div class="col col--1">
+                    <div class="col__content col__content--2">
+                        <h2 class="col__content-title"><span class="line__inner">Look</span><br /><span class="line__inner">No. 2</span></h2>
+                        <div class="col__content-wrap">
+                            <p class="col__content-txt">In the expansive world of Assassin's Creed, players embark on thrilling quests across diverse landscapes, merging gripping storylines with innovative gameplay, ensuring an enthralling and unforgettable gaming odyssey.</p>
+                            <a href="#" class="slide-link">
+                                <div class="slide-link__circ"></div>
+                                <div class="slide-link__line"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#slide-3" class="slide__scroll-link">
+                        <div class="slide__scroll-line"></div>
+                    </a>
+                </div>
+                <div class="col col--2">
+                    <div class="col__image-wrap">
+                        <img class="img img--1" src="images/p4.jpg" />
+                    </div>
+                </div>
+            </section>
+    
+            <section class="slide slide--3" id="slide-3">
+                <div class="col col--1">
+                    <div class="col__content col__content--3">
+                        <h2 class="col__content-title"><span class="line__inner">Zombie</span><br /><span class="line__inner">No. 3</span></h2>
+                        <div class="col__content-wrap">
+                            <p class="col__content-txt">Assassin's Creed, a gaming masterpiece, transports enthusiasts to historical epochs, seamlessly intertwining engaging narratives with cutting-edge gameplay, creating an immersive and unforgettable adventure across time.</p>
+                            <a href="#" class="slide-link">
+                                <div class="slide-link__circ"></div>
+                                <div class="slide-link__line"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#slide-4" class="slide__scroll-link">
+                        <div class="slide__scroll-line"></div>
+                    </a>
+                </div>
+                <div class="col col--2">
+                    <div class="col__image-wrap">
+                        <img class="img img--1" src="images/p5.jpg" />
+                    </div>
+                </div>
+            </section>
+    
+            <section class="slide slide--4" id="slide-4">
+                <div class="col col--1">
+                    <div class="col__content col__content--4">
+                        <h2 class="col__content-title"><span class="line__inner">Jimi</span><br /><span class="line__inner">No. 4</span></h2>
+                        <div class="col__content-wrap">
+                            <p class="col__content-txt">Immersive and thrilling, the Assassin's Creed series takes players on epic journeys through history, blending captivating narratives with dynamic gameplay for an unforgettable experience filled with excitement and intrigue</p>
+                            <a href="#" class="slide-link">
+                                <div class="slide-link__circ"></div>
+                                <div class="slide-link__line"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#slide-5" class="slide__scroll-link">
+                        <div class="slide__scroll-line"></div>
+                    </a>
+                </div>
+                <div class="col col--2">
+                    <div class="col__image-wrap">
+                        <img class="img img--1" src="images/p6.jpg" />
+                    </div>
+                </div>
+            </section>
+    
+            <section class="slide slide--5" id="slide-5">
+                <div class="col col--1">
+                    <div class="col__content col__content--5">
+                        <h2 class="col__content-title"><span class="line__inner">Exit</span><br /><span class="line__inner">No. 5</span></h2>
+                        <div class="col__content-wrap">
+                            <p class="col__content-txt">Vivid and enthralling, the Assassin's Creed series masterfully combines rich storytelling with dynamic gameplay, transporting players to diverse historical landscapes and weaving tales of intrigue, adventure, and suspense.</p>
+                            <a href="#" class="slide-link">a
+                                <div class="slide-link__circ"></div>
+                                <div class="slide-link__line"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#slide-6" class="slide__scroll-link">
+                        <div class="slide__scroll-line"></div>
+                    </a>
+                </div>
+                <div class="col col--2">
+                    <div class="col__image-wrap">
+                        <img class="img img--1" src="images/p7.jpg" />
+                    </div>
+                </div>
+            </section>
+    
+            <section class="slide slide--6" id="slide-6">
+                <div class="col col--1">
+                    <div class="col__content col__content--6">
+                        <h2 class="col__content-title"><span class="line__inner">Smart</span><br /><span class="line__inner">No. 6</span></h2>
+                        <div class="col__content-wrap">
+                            <p class="col__content-txt">"Assassin's Creed, a captivating video game series, thrusts players into historical realms, blending immersive narratives with stealthy gameplay for an unparalleled experience filled with intrigue, action, and historical richness."</p>
+                            <a href="#" class="slide-link">
+                                <div class="slide-link__circ"></div>
+                                <div class="slide-link__line"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#slide-7" class="slide__scroll-link">
+                        <div class="slide__scroll-line"></div>
+                    </a>
+                </div>
+                <div class="col col--2">
+                    <div class="col__image-wrap">
+                        <img class="img img--1" src="images/p8.jpg" />
+                    </div>
+                </div>
+            </section>
+    
+            <footer class="footer" id="slide-7">
+                <a class="footer__link" href="#" target="_blank">Assassin's Creed.ie</a>
+                <a class="footer__link-top" href="#slide-0">Top<span class="footer__link-top-line"></span></a>
+                <p class="footer__copyright">Assassin's Creed</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <!------------------script--------------->
+
+    <script src="script.js"></script>
+</body>
+</html>
